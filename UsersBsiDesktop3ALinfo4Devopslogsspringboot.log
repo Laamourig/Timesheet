@@ -1,0 +1,26 @@
+23-01-2022 22:37:28 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Amr with PID 4944 (C:\Users\Bsi\Desktop\3ALinfo4\Devops\Timesheet\target\classes started by AMR MOUJBANI-PC in C:\Users\Bsi\Desktop\3ALinfo4\Devops\Timesheet) 
+ [32m[0;39m23-01-2022 22:37:28 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+ [32m[0;39m23-01-2022 22:37:33 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode. 
+ [32m[0;39m23-01-2022 22:37:34 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 162ms. Found 6 repository interfaces. 
+ [32m[0;39m23-01-2022 22:37:35 - INFO - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7977aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+ [32m[0;39m23-01-2022 22:37:37 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http) 
+ [32m[0;39m23-01-2022 22:37:37 - INFO - o.a.catalina.core.StandardService - Starting service [Tomcat] 
+ [32m[0;39m23-01-2022 22:37:37 - INFO - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17] 
+ [32m[0;39m23-01-2022 22:37:38 - INFO - o.a.c.c.C.[.[localhost].[/SpringMVC] - Initializing Spring embedded WebApplicationContext 
+ [32m[0;39m23-01-2022 22:37:38 - INFO - o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9697 ms 
+ [32m[0;39m23-01-2022 22:37:39 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+ [32m[0;39m23-01-2022 22:37:39 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+ [32m[0;39m23-01-2022 22:37:39 - INFO - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+ [32m[0;39m23-01-2022 22:37:41 - INFO - org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final} 
+ [32m[0;39m23-01-2022 22:37:41 - INFO - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+ [32m[0;39m23-01-2022 22:37:42 - INFO - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final} 
+ [32m[0;39m23-01-2022 22:37:42 - INFO - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+ [32m[0;39m23-01-2022 22:37:48 - INFO - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+ [32m[0;39m23-01-2022 22:37:49 - INFO - o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+ [32m[0;39m23-01-2022 22:37:51 - INFO - o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+ [32m[0;39m23-01-2022 22:37:51 - WARN - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+ [33m[0;39m23-01-2022 22:37:51 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/SpringMVC' 
+ [32m[0;39m23-01-2022 22:37:51 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 24.992 seconds (JVM running for 28.7) 
+ [32m[0;39m
