@@ -13,10 +13,6 @@ import java.util.List;
 public class IControllerEmployeImpl  {
 	@Autowired
 	IEmployeService iemployeservice;
-	@Autowired
-	IEntrepriseService ientrepriseservice;
-	@Autowired
-	ITimesheetService itimesheetservice;
 
 	public int ajouterEmploye(Employe employe)
 	{
@@ -97,13 +93,11 @@ public class IControllerEmployeImpl  {
 
 	
 	public float getSalaireByEmployeIdJPQL(int employeId) {
-		// TODO Auto-generated method stub
 		return iemployeservice.getSalaireByEmployeIdJPQL(employeId);
 	}
 
 
 	public Double getSalaireMoyenByDepartementId(int departementId) {
-		// TODO Auto-generated method stub
 		return iemployeservice.getSalaireMoyenByDepartementId(departementId);
 	}
 
@@ -121,20 +115,4 @@ public class IControllerEmployeImpl  {
 		
 		return iemployeservice.getAllEmployes();
 	}
-
-	
-	
-
-	
-	
-
-	
-	
-
-	
-	
-    
-	
-	
-	
 }
