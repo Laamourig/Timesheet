@@ -1,5 +1,6 @@
 package tn.esprit.spring.services;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Slf4j
 @Service
 public class EmployeServiceImpl implements IEmployeService {
 
@@ -26,34 +28,51 @@ public class EmployeServiceImpl implements IEmployeService {
     TimesheetRepository timesheetRepository;
 
 	public int ajouterEmploye(Employe employe) {
-		employeRepository.save(employe);
+		log.info("Adding employee ...");
+		try {
+			employeRepository.save(employe);
+		} catch (Exception e){
+			log.error("An exception thrown when adding employee " + e.getStackTrace());
+		}
+		log.info("Employee "+employe.getPrenom()+" added successfully!");
 		return employe.getId();
 	}
 
 	public void mettreAjourEmailByEmployeId(String email, int employeId) {
+		log.info("Updating emplyee " + employeId + " by email : " + email);
 		Employe employe = employeRepository.findById(employeId).orElse(null);
+		log.debug("mettreAjourEmailByEmployeId " + employe);
 		if (employe != null){
 			employe.setEmail(email);
-			employeRepository.save(employe);
+			try {
+				employeRepository.save(employe);
+			} catch (Exception e){
+				log.error("An exception thrown when updating employee " + e.getStackTrace());
+			}
+			log.info("Employee " + employe.getPrenom() + " updated successfully!");
+		} else {
+			log.info("Employee with id " + employeId + " not found");
 		}
-
 	}
 
 	@Transactional	
 	public void affecterEmployeADepartement(int employeId, int depId) {
+		log.info("Affecting employe to departement ...");
 		Departement depManagedEntity = deptRepoistory.findById(depId).orElse(null);
 		Employe employeManagedEntity = employeRepository.findById(employeId).orElse(null);
 
+		log.debug("affecterEmployeADepartement");
+		log.debug("employeID : " + employeId + " depId : " + depId);
 		if (employeManagedEntity != null && depManagedEntity != null){
 			if(depManagedEntity.getEmployes() == null){
 
 				List<Employe> employes = new ArrayList<>();
 				employes.add(employeManagedEntity);
 				depManagedEntity.setEmployes(employes);
+				log.info("Employe affected to departement!");
 			}else{
-
 				depManagedEntity.getEmployes().add(employeManagedEntity);
-
+				log.info("Employe affected to departement!");
 			}
 		}
 
@@ -61,13 +80,20 @@ public class EmployeServiceImpl implements IEmployeService {
 	@Transactional
 	public void desaffecterEmployeDuDepartement(int employeId, int depId)
 	{
+		log.info("Desaffecting employe from departement ...");
 		Departement dep = deptRepoistory.findById(depId).orElse(null);
 
+		log.debug("desaffecterEmployeDuDepartement");
 		if (dep != null){
 			int employeNb = dep.getEmployes().size();
+			log.debug("employeNb : " + employeNb);
 			for(int index = 0; index < employeNb; index++){
+				log.debug("index : " + index);
+				log.debug("employeId : " + employeId);
+				log.debug("dep.getEmployes().get(index).getId() : " + dep.getEmployes().get(index).getId());
 				if(dep.getEmployes().get(index).getId() == employeId){
 					dep.getEmployes().remove(index);
+					log.info("Employe desaffected from departement!");
 					break;//a revoir
 				}
 			}
@@ -75,19 +101,33 @@ public class EmployeServiceImpl implements IEmployeService {
 	}
 
 	public int ajouterContrat(Contrat contrat) {
-		contratRepoistory.save(contrat);
+		log.info("Adding contrat ...");
+		try {
+			contratRepoistory.save(contrat);
+		} catch (Exception e){
+			log.error("An exception thrown when adding an contrat " + e.getStackTrace());
+		}
+		log.info("Contrat "+contrat.getReference()+" added successfully!");
 		return contrat.getReference();
 	}
 
 	public void affecterContratAEmploye(int contratId, int employeId) {
+		log.info("Affecting contrat with id : " + contratId + " to the employe with id : " + employeId);
 		Contrat contratManagedEntity = contratRepoistory.findById(contratId).orElse(null);
 		Employe employeManagedEntity = employeRepository.findById(employeId).orElse(null);
+		log.debug("affecterContratAEmploye, contratID: " + contratId + "employeeId : " + employeId);
 
 		if (contratManagedEntity != null && employeManagedEntity != null){
 			contratManagedEntity.setEmploye(employeManagedEntity);
-			contratRepoistory.save(contratManagedEntity);
+			try {
+				contratRepoistory.save(contratManagedEntity);
+			} catch (Exception e){
+				log.error("An exception thrown affecting contrat to employee " + e.getStackTrace());
+			}
+			log.info("Contrat is affected to employee");
+		} else {
+			log.info("Contrat or employee not found");
 		}
-		
 	}
 
 	public String getEmployePrenomById(int employeId) {
