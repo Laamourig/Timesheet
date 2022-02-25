@@ -5,6 +5,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import java.util.Optional;
@@ -35,7 +36,7 @@ public class EntrepriseServiceImplTest {
 	public void ajouterEntrepriseTest() {
 		Entreprise ent = new Entreprise("dummy", "dummy");
 		int a = es.ajouterEntreprise(ent);
-		assertNotNull(a);
+		assertTrue(a > 0);
 		// clear db
 		er.deleteById(a);
 	}
@@ -44,7 +45,7 @@ public class EntrepriseServiceImplTest {
 	public void ajouterDepartementTest() {
 		Departement dep = new Departement("dummy");
 		int a = es.ajouterDepartement(dep);
-		assertNotNull(a);
+		assertTrue(a > 0);
 		// clear db
 		dr.deleteById(a);
 	}
