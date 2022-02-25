@@ -1,5 +1,6 @@
 package tn.esprit.spring;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,22 +28,22 @@ public class EmployeServiceImplTest {
         employe.setEmail("fourat.nefoussi@esprit.tn");
         employe.setActif(true);
         employe.setRole(Role.INGENIEUR);
-        employeService.ajouterEmploye(employe);
+        Assert.assertNotNull((Integer)employeService.ajouterEmploye(employe));
     }
 
-    @Test
+    @Test(expected = Test.None.class)
     public void mettreAjourEmailByEmployeIdTest(){
         String email = "Test@test.com";
         int employeId = 1;
         employeService.mettreAjourEmailByEmployeId(email,employeId);
     }
 
-    @Test
+    @Test(expected = Test.None.class)
     public void affecterEmployeADepartementTest(){
         employeService.affecterEmployeADepartement(1,1);
     }
 
-    @Test
+    @Test(expected = Test.None.class)
     public void desaffecterEmployeDuDepartementTest(){
         employeService.desaffecterEmployeDuDepartement(1,1);
     }
@@ -54,10 +55,10 @@ public class EmployeServiceImplTest {
         contrat.setReference(20);
         contrat.setSalaire(1000);
         contrat.setTypeContrat("CDI");
-        employeService.ajouterContrat(contrat);
+        Assert.assertNotNull((Integer)employeService.ajouterContrat(contrat));
     }
 
-    @Test
+    @Test(expected = Test.None.class)
     public void affecterContratAEmployeTest(){
         employeService.affecterContratAEmploye(1,1);
     }
