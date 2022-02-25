@@ -18,8 +18,8 @@ public class EntrepriseAspect {
 
 	@AfterThrowing(value = "execution(* tn.esprit.spring.services.EntrepriseServiceImpl.*(..))", throwing = "ex")
 	public void logException(JoinPoint joinPoint, Exception ex) {
-		LOG.error("Exception in method:" + joinPoint.getSignature());
-		LOG.error("Exception is:" + ex.getMessage());
+		LOG.error("Exception in method {}" , joinPoint.getSignature());
+		LOG.error("Exception is {}" , ex.getMessage());
 	}
 
 	@Before("execution(* tn.esprit.spring.services.EntrepriseServiceImpl.*(..))")
@@ -41,7 +41,7 @@ public class EntrepriseAspect {
 		if (elapsedTime > 3000) {
 			LOG.warn("This process takes more than 3sec to execute");
 		}
-		LOG.info("Method execution time: " + elapsedTime + " milliseconds.");
+		LOG.info("Method execution time {}" , elapsedTime);
 		return obj;
 	}
 
