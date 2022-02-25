@@ -1,0 +1,258 @@
+25-02-2022 02:25:17 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 14964 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:25:17 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:25:17 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:25:17 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:28:01 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 12440 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:28:01 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:28:02 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:28:02 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:30:03 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 9880 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:30:03 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:30:03 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:30:04 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:30:24 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 15908 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:30:24 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:30:24 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:30:24 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:34:37 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 14996 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:34:37 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:34:37 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:34:38 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:41:09 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 15840 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:41:09 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:41:10 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:41:10 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 19 common frames omitted
+25-02-2022 02:41:37 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 5908 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:41:37 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:41:37 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:41:37 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:42:28 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 13920 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:42:28 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:42:28 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:42:28 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
+25-02-2022 02:44:49 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on Elomri with PID 8244 (C:\Users\omria\Documents\GitProject\devops\target\classes started by omria in C:\Users\omria\Documents\GitProject\devops) 
+25-02-2022 02:44:49 - INFO - t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application - No active profile set, falling back to default profiles: default 
+25-02-2022 02:44:49 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl] 
+25-02-2022 02:44:49 - ERROR- o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'IControllerEntrepriseImpl' for bean class [tn.esprit.spring.entities.IControllerEntrepriseImpl] conflicts with existing, non-compatible bean definition of same name and class [tn.esprit.spring.controller.IControllerEntrepriseImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
